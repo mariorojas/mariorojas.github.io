@@ -142,13 +142,6 @@ h1 {
     text-wrap: balance;
 }
 
-.sub {
-    color: var(--muted);
-    margin-top: 10px;
-    max-width: 44ch;
-    text-wrap: balance;
-}
-
 .actions {
     display: flex;
     flex-wrap: wrap;
@@ -280,7 +273,8 @@ h1 {
 }
 
 .desc,
-.year {
+.year,
+.level {
     color: var(--muted);
 }
 
