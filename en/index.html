@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Rojas</title>
+    <meta name="description" content="Mario Rojas — independent developer who builds and improves online stores for large companies in the US and Latin America.">
+    <meta name="theme-color" content="#f5f5f7">
+
+    <link rel="canonical" href="https://mariorojas.github.io/en/">
+    <link rel="alternate" hreflang="es" href="https://mariorojas.github.io/">
+    <link rel="alternate" hreflang="en" href="https://mariorojas.github.io/en/">
+    <link rel="alternate" hreflang="x-default" href="https://mariorojas.github.io/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="es_MX">
+    <meta property="og:title" content="Mario Rojas">
+    <meta property="og:description" content="I build software that big brands use to sell more online.">
+    <meta property="og:image" content="https://mariorojas.github.io/images/mario.jpg">
+    <meta property="og:url" content="https://mariorojas.github.io/en/">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" href="../images/mario.jpg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="../images/mario.jpg">
+
+    <link rel="preload" href="../fonts/source-serif-4-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/geist-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav class="lang" aria-label="Language">
+        <a href="../" hreflang="es" lang="es" aria-label="Español">ES</a>
+        <a href="./" hreflang="en" lang="en" aria-label="English" aria-current="page">EN</a>
+    </nav>
+
+    <main class="page">
+        <header class="hero">
+            <img class="avatar" src="../images/mario.jpg" width="120" height="120" alt="Portrait of Mario Rojas at the beach">
+            <p class="tag"><span class="dot" aria-hidden="true"></span>Morelia, Mexico</p>
+            <h1>Mario Rojas</h1>
+            <p class="lead">I build software that big brands use to sell more online.</p>
+            <nav class="actions" aria-label="Contact">
+                <a class="btn btn-primary" href="https://www.linkedin.com/in/mariorojasmx" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a class="btn" href="https://github.com/mariorojas" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a class="btn" id="email" href="#" data-u="sajoroiram" data-d="moc.kooltuo">Email</a>
+            </nav>
+        </header>
+
+        <section class="facts" aria-label="At a glance">
+            <div class="fact"><strong>10+</strong><span>years coding</span></div>
+            <div class="fact"><strong>8+</strong><span>years in <span class="nowrap">e-commerce</span></span></div>
+            <div class="fact"><strong>SAP</strong><span>certified</span></div>
+        </section>
+
+        <section class="group" aria-labelledby="work-title">
+            <h2 id="work-title">Selected work</h2>
+            <ul class="card list">
+                <li>
+                    <span class="name">Discount Tire</span>
+                    <span class="desc">Card payments and in-store sales tools for a major US tire retailer.</span>
+                </li>
+                <li>
+                    <span class="name">Yanbal</span>
+                    <span class="desc">An ordering platform launched in six Latin American countries.</span>
+                </li>
+                <li>
+                    <span class="name">Mabe</span>
+                    <span class="desc">Spare-parts stores for Canada and Central America.</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="group" aria-labelledby="career-title">
+            <h2 id="career-title">Career</h2>
+            <ul class="card list list-row">
+                <li><span class="name">Independent</span><span class="year">2021 – now</span></li>
+                <li><span class="name">AgileThought</span><span class="year">2019 – 2021</span></li>
+                <li><span class="name">Enapsys</span><span class="year">2018</span></li>
+                <li><span class="name">Teknei</span><span class="year">2014 – 2018</span></li>
+            </ul>
+        </section>
+
+        <section class="group" aria-labelledby="languages-title">
+            <h2 id="languages-title">Languages</h2>
+            <ul class="card list list-row">
+                <li><span class="name">Spanish</span><span class="level">Native</span></li>
+                <li><span class="name">English</span><span class="level">Professional</span></li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2026 Mario Rojas</p>
+        </footer>
+    </main>
+
+    <script>
+        // The address is stored reversed and split, and only assembled when a person clicks,
+        // so bots that scrape the HTML for email addresses find nothing.
+        (function () {
+            var link = document.getElementById('email');
+            var flip = function (s) { return s.split('').reverse().join(''); };
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                var address = flip(link.dataset.u) + String.fromCharCode(64) + flip(link.dataset.d);
+                link.textContent = address;
+                window.location.href = 'mai' + 'lto:' + address;
+            });
+        })();
+    </script>
+</body>
+</html>

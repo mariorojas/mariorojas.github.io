@@ -82,6 +82,49 @@ a {
     gap: 48px;
 }
 
+/* Language switcher */
+.lang {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    display: flex;
+    gap: 2px;
+    padding: 3px;
+    background: var(--surface);
+    border-radius: 999px;
+    box-shadow: 0 0 0 1px var(--hairline), 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.lang a {
+    display: block;
+    min-width: 40px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.4;
+    text-align: center;
+    text-decoration: none;
+    color: var(--muted);
+    transition: color 0.2s var(--ease), background 0.2s var(--ease);
+}
+
+.lang a:hover {
+    color: var(--ink);
+}
+
+.lang a[aria-current="page"] {
+    background: var(--mint-deep);
+    color: #fff;
+}
+
+.lang a:focus-visible {
+    outline: 2px solid var(--mint-deep);
+    outline-offset: 2px;
+}
+
 /* Hero */
 .hero {
     display: flex;
@@ -217,7 +260,7 @@ h1 {
     color: var(--mint-deep);
 }
 
-.fact span {
+.fact > span {
     font-size: 14px;
     color: var(--muted);
     line-height: 1.4;
@@ -283,6 +326,10 @@ h1 {
     white-space: nowrap;
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
 /* Footer */
 .footer {
     display: flex;
@@ -305,8 +352,13 @@ h1 {
 
 /* Small screens */
 @media (max-width: 560px) {
+    .lang {
+        top: 16px;
+        right: 16px;
+    }
+
     .page {
-        padding: 64px 16px 40px;
+        padding: 72px 16px 40px;
         gap: 40px;
     }
 
@@ -331,7 +383,7 @@ h1 {
         font-size: 28px;
     }
 
-    .fact span {
+    .fact > span {
         font-size: 13px;
     }
 }
